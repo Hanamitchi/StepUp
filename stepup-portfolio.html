@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Step_Up | Portfolio Showcase - Our Work</title>
+    <title>Step_Up | Contact Us - Let's Build Your Portfolio</title>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Source+Sans+Pro:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="stepup-style.css">
 </head>
@@ -17,78 +17,93 @@
     <div></div>
     <div></div>
   </div>
-        
+       
 
             <ul class="nav-links" id="nav-links">
-                <li><a href="index.htmll">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="stepup-about.html">About</a></li>
                 <li><a href="stepup-features.html">Features</a></li>
                 <li><a href="stepup-services.html">Services</a></li>
-                <li><a href="stepup-portfolio.html" class="active">Portfolio</a></li>
-                <li><a href="stepup-contact.html">Contact</a></li>
+                <li><a href="stepup-portfolio.html">Portfolio</a></li>
+                <li><a href="stepup-contact.html" class="active">Contact</a></li>
             </ul>
-       
+
     </nav>
 
     <div class="container">
-        <h1 class="page-title">Our Portfolio</h1>
-        <p class="page-subtitle">Stunning e-portfolios we've created for our clients</p>
+        <h1 class="page-title">Let's Get In Touch</h1>
+        <p class="page-subtitle">Want your own e-portfolio website? Let's discuss your vision and make it a reality!</p>
 
-        <div class="portfolio-grid">
-            <div class="portfolio-item">
-                <div class="portfolio-image">👨‍💻</div>
-                <div class="portfolio-content">
-                    <h3 class="portfolio-title">Web Developer Portfolio</h3>
-                    <p class="portfolio-category">Developer | React & Node.js</p>
-                    <p class="portfolio-description">A sleek portfolio showcasing web development projects with interactive demos and GitHub integration.</p>
+        <div class="contact-content">
+            <div class="contact-info">
+                <div class="info-section">
+                    <h3 class="info-title">Contact Information</h3>
+                    <div class="contact-item">
+                        <div class="contact-label">Email</div>
+                        <a href="mailto:stepup.est2024@gmail.com" class="contact-value">stepup.est2024@gmail.com</a>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-label">Phone</div>
+                        <a href="tel:+639972405961" class="contact-value">+63 997 240 5961</a>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-label">Response Time</div>
+                        <div class="contact-value">Usually within 24 hours</div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-label">Available</div>
+                        <div class="contact-value">Monday - Friday, 9 AM - 6 PM</div>
+                    </div>
+                    <div class="contact-links">
+                        <a href="mailto:je@stepup.com" class="social-link" title="Email">✉️</a>
+                        <a href="#" class="social-link" title="Twitter">𝕏</a>
+                        <a href="#" class="social-link" title="LinkedIn">in</a>
+                    </div>
+                </div>
+
+                <div class="location-box">
+                    <div class="location-label">📍 Remote-First</div>
+                    <div class="location-text">Serving clients worldwide with personalized service</div>
                 </div>
             </div>
-            <div class="portfolio-item">
-                <div class="portfolio-image">🎨</div>
-                <div class="portfolio-content">
-                    <h3 class="portfolio-title">UI/UX Designer Portfolio</h3>
-                    <p class="portfolio-category">Designer | Figma & UI Design</p>
-                    <p class="portfolio-description">Beautiful portfolio featuring design projects, case studies, and design thinking methodology.</p>
-                </div>
-            </div>
-            <div class="portfolio-item">
-                <div class="portfolio-image">📸</div>
-                <div class="portfolio-content">
-                    <h3 class="portfolio-title">Photography Portfolio</h3>
-                    <p class="portfolio-category">Photographer | Visual Storytelling</p>
-                    <p class="portfolio-description">Elegant gallery portfolio with high-quality image displays and client testimonials.</p>
-                </div>
-            </div>
-            <div class="portfolio-item">
-                <div class="portfolio-image">📝</div>
-                <div class="portfolio-content">
-                    <h3 class="portfolio-title">Content Writer Portfolio</h3>
-                    <p class="portfolio-category">Writer | Content Strategy</p>
-                    <p class="portfolio-description">Professional portfolio with writing samples, blog section, and client success stories.</p>
-                </div>
-            </div>
-            <div class="portfolio-item">
-                <div class="portfolio-image">📊</div>
-                <div class="portfolio-content">
-                    <h3 class="portfolio-title">Data Scientist Portfolio</h3>
-                    <p class="portfolio-category">Data Science | Python & ML</p>
-                    <p class="portfolio-description">Technical portfolio with project demos, interactive visualizations, and research papers.</p>
-                </div>
-            </div>
-            <div class="portfolio-item">
-                <div class="portfolio-image">🎬</div>
-                <div class="portfolio-content">
-                    <h3 class="portfolio-title">Video Editor Portfolio</h3>
-                    <p class="portfolio-category">Editor | Motion Graphics</p>
-                    <p class="portfolio-description">Dynamic portfolio with embedded video samples and project showcases with descriptions.</p>
-                </div>
+
+            <div>
+                <form class="contact-form" id="contactForm">
+                    <h3>Send Me a Message</h3>
+                    
+                    <div class="success-message" id="successMessage">
+                        ✓ Thanks for reaching out! I'll get back to you soon.
+                    </div>
+
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name" placeholder="JEYIH" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Your Email</label>
+                        <input type="email" id="email" name="email" placeholder="JEYIH@example.com" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" placeholder="I want to build my e-portfolio" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Tell Me About Your Project</label>
+                        <textarea id="message" name="message" placeholder="What's your profession? What are you looking for?" required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
             </div>
         </div>
 
-        <div style="margin-top: 64px; text-align: center; padding: 32px; background-color: #ffe5d9; border-radius: 8px;">
-            <h3 style="font-family: 'Playfair Display', serif; font-size: 24px; margin-bottom: 16px; color: #1a1a1a;">Want your own e-portfolio website?</h3>
-            <p style="color: #666666; margin-bottom: 24px; font-size: 16px;">See how I can help you create a stunning portfolio that showcases your talent. Let's build your success together!</p>
-            <a href="stepup-contact.html" class="btn btn-primary">Start Your Portfolio</a>
+        <div style="margin-top: 64px; padding: 32px; background-color: #ffe5d9; border-radius: 8px; text-align: center;">
+            <h3 style="font-family: 'Playfair Display', serif; font-size: 21px; margin-bottom: 16px; color: #1a1a1a;">Ready to Step Up?</h3>
+            <p style="color: #666666; margin-bottom: 24px;">I'm JE, and I'm excited to help you build an amazing e-portfolio. Let's create something special together!</p>
+            <a href="stepup-services.html" class="btn btn-primary">Explore Services</a>
         </div>
     </div>
 
