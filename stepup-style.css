@@ -103,14 +103,13 @@ body {
   }
 
   .nav-links{
-    position:absolute;
-    right:0;
-    top:40px;
+    position:relative;
     background:#f8c49a;
     flex-direction:column;
-    width:100%;
+    width:30%;
     text-align:center;
     display:none;
+    border-radius: 40px;
   }
 
   .nav-links li{
@@ -188,7 +187,7 @@ section {
     max-width: 1200px;
     margin: 0 auto;
     padding: 80px 32px;
-    border-top: 1px solid #e8e8e8;
+    border-top: 1px solid #000000;
 }
 
 .section-title {
@@ -287,10 +286,10 @@ section {
 }
 
 .hero-image {
-    width: 100%;
+    width: 300px;
     max-width: 350px;
-    height: 300px;
-    border-radius: 12px;
+    height: 275px;
+    border-radius: 100px;
     background: linear-gradient(135deg, #ffe5d9 0%, rgba(255, 107, 53, 0.1) 100%);
     display: flex;
     align-items: center;
@@ -332,28 +331,7 @@ section {
     line-height: 1.8;
 }
 
-.about-highlights {
-    display: flex;
-    gap: 32px;
-    margin-top: 32px;
-}
 
-.highlight {
-    flex: 1;
-}
-
-.highlight-number {
-    font-family: 'Playfair Display', serif;
-    font-size: 32px;
-    font-weight: 700;
-    color: #ff6b35;
-}
-
-.highlight-label {
-    color: #666666;
-    font-size: 14px;
-    margin-top: 8px;
-}
 
 .quick-links {
     display: grid;
@@ -387,7 +365,7 @@ section {
 }
 
 .quick-card-label {
-    color: #666666;
+    color: #000000;
     font-size: 14px;
 }
 
@@ -423,11 +401,24 @@ section {
 }
 
 .highlights-box {
-    background-color: #ffffff;
+    position: relative;
+    background-color: aliceblue;
     padding: 32px;
     border-radius: 8px;
     border: 1px solid #e8e8e8;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.highlight-item::after {
+    content: "StepUp";
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    transform: rotate(-25deg);
+    font-size: 110px;
+    color: rgba(0, 0, 0, 0.04);
+    font-weight: bold;
+    z-index: 0;
 }
 
 .highlight-item {
@@ -436,6 +427,19 @@ section {
 
 .highlight-item:last-child {
     margin-bottom: 0;
+}
+
+.highlight-number {
+    font-family: 'Playfair Display', serif;
+    font-size: 32px;
+    font-weight: 700;
+    color: #ff6b35;
+}
+
+.highlight-label {
+    color: #666666;
+    font-size: 14px;
+    margin-top: 8px;
 }
 
 .cta-link {
@@ -465,7 +469,9 @@ section {
 }
 
 .feature-card {
-    background-color: #ffffff;
+    position: relative;
+    background-color:aliceblue;
+    overflow: hidden;
     padding: 40px;
     border-radius: 8px;
     border: 1px solid #e8e8e8;
@@ -473,6 +479,20 @@ section {
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
     text-align: center;
 }
+
+.feature-card::after {
+    content: "StepUp";
+    position: absolute;
+    top: 120px;
+    left: 15px;
+    transform: rotate(-25deg);
+    font-size: 80px;
+    color: rgba(0, 0, 0, 0.1);
+    font-weight: bold;
+    z-index: 0;
+}
+
+
 
 .feature-card:hover {
     border-color: #ff6b35;
@@ -484,6 +504,8 @@ section {
     font-size: 48px;
     margin-bottom: 16px;
     display: block;
+    border: 2px solid #000000;
+    background-color: #fccc96;
 }
 
 .feature-title {
@@ -500,6 +522,7 @@ section {
     line-height: 1.6;
 }
 
+
 /* ========== SERVICES PAGE ========== */
 
 .services-grid {
@@ -509,8 +532,9 @@ section {
 }
 
 .service-card {
-    background-color: #ffffff;
-    border: 1px solid #e8e8e8;
+    position: relative;
+    background-color: aliceblue;
+    border: 1px solid #000000;
     border-radius: 8px;
     overflow: hidden;
     transition: all 0.3s ease;
@@ -521,9 +545,21 @@ section {
 
 .service-card:hover {
     border-color: #ff6b35;
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
     transform: translateY(-6px);
 }
+
+.service-card::after {
+    content: "StepUp";
+    position: absolute;
+    top: 30%;
+    left: 0%;
+    transform: rotate(-25deg);
+    font-size: 110px;
+    color: rgba(0, 0, 0, 0.15);
+    font-weight: bold;
+    z-index: 0;
+}
+
 
 .service-header {
     background: linear-gradient(135deg, #ffe5d9 0%, rgba(255, 107, 53, 0.05) 100%);
@@ -578,25 +614,6 @@ section {
     font-weight: 600;
 }
 
-.service-price {
-    font-family: 'Playfair Display', serif;
-    font-size: 21px;
-    font-weight: 700;
-    color: #ff6b35;
-    margin-bottom: 16px;
-}
-
-.service-link {
-    color: #ff6b35;
-    text-decoration: none;
-    font-weight: 600;
-    transition: all 0.3s ease;
-    display: inline-block;
-}
-
-.service-link:hover {
-    color: #d84315;
-}
 
 /* ========== PORTFOLIO PAGE ========== */
 
@@ -607,12 +624,25 @@ section {
 }
 
 .portfolio-item {
+    position: relative;
     background-color: #ffffff;
     border: 1px solid #e8e8e8;
     border-radius: 8px;
     overflow: hidden;
     transition: all 0.3s ease;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.portfolio-item::after {
+    content: "StepUp";
+    position: absolute;
+    top: 15%;
+    left: 5%;
+    transform: rotate(-25deg);
+    font-size: 110px;
+    color: rgba(0, 0, 0, 0.09);
+    font-weight: bold;
+    z-index: 0;
 }
 
 .portfolio-item:hover {
@@ -714,27 +744,6 @@ section {
     margin-top: 24px;
 }
 
-.social-link {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 50px;
-    height: 50px;
-    border-radius: 8px;
-    background-color: #ffe5d9;
-    color: #ff6b35;
-    text-decoration: none;
-    transition: all 0.3s ease;
-    font-weight: 600;
-    font-size: 19px;
-}
-
-.social-link:hover {
-    background-color: #ff6b35;
-    color: white;
-    transform: translateY(-3px);
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
-}
 
 .contact-form {
     background-color: #ffffff;
